@@ -1,4 +1,4 @@
-FastAPI
-PyMongo
-pydantic
-Uvicorn
+uvicorn~=0.22.0
+fastapi~=0.95.1
+pymongo~=4.3.3
+pydantic~=1.10.7
