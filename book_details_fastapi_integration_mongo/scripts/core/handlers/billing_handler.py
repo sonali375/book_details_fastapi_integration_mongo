@@ -40,4 +40,4 @@ class ItemHandler:
             }
         ])
         print(data)
-        return list(data)[0]['total']
+        return {"total_amount": list(data)[0]['total']}

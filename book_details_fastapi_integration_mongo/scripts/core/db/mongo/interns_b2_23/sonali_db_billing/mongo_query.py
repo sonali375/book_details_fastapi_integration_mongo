@@ -49,4 +49,4 @@ def delete_item(item_id: int):
 
 
 def pipeline_aggregation(pipeline: list):
-    billing.aggregate(pipeline)
+    return billing.aggregate(pipeline)

@@ -1,3 +1,4 @@
+import os
 import smtplib
 from pydantic import BaseModel
 from email.mime.multipart import MIMEMultipart
@@ -11,8 +12,8 @@ class Email(BaseModel):
 
 
 def send_email(body, email: Email):
-    sender_email = "sonalisahu2001@gmail.com"
-    sender_password = "jaerjycmkvrlwwyu"
+    sender_email = os.environ.get("sender_email")
+    sender_password = os.environ.get("sender-password")
     receiver_email = email.rec_email
 
     message = MIMEMultipart()
