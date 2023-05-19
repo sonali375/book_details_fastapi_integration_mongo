@@ -1,24 +1,18 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from pymongo import MongoClient   # import mongo client to connect
+from scripts.constants.app_constants import DBConstants
+from scripts.core.schema.model import Item
 
 app = FastAPI()
 
 
 # Creating instance of mongo client
-client = MongoClient("mongodb://intern_23:intern%40123@192.168.0.220:2717/interns_b2_23")
+client = MongoClient(DBConstants.DB_URI)
 # Creating database
-db = client['interns_b2_23']
+db = client[DBConstants.DB_NAME]
 # # Creating document
-billing = db['sonali_db_billing']
-
-
-# creating class
-class Item(BaseModel):
-    id: int
-    name: str
-    quantity: int
-    cost: int
+billing = db[DBConstants.DB_COllECTION]
 
 
 def read_item():

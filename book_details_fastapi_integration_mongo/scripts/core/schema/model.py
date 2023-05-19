@@ -1,3 +1,6 @@
+"""
+THIS IS THE MODEL CONTAINING THE CLASSES
+"""
 from pydantic import BaseModel
 
 
@@ -6,3 +9,4 @@ class Item(BaseModel):
     name: str
     quantity: int
     cost: int
+
