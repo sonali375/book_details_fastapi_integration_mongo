@@ -6,6 +6,7 @@ from scripts.core.handlers.email_handler import send_email, Email
 from scripts.constants.app_constants import APis
 from scripts.exceptions.exception_codes import BillingServicesException
 from scripts.logging.logger import logger
+from json2html import *
 
 item_router = APIRouter()
 
@@ -13,12 +14,14 @@ item_router = APIRouter()
 @item_router.get(APis.view_all_items_api)
 def view_all_items():
     """Function to view all items"""
+    result_dict = {"status": "failed", "data": None}
     try:
         logger.info("Services: view_all_items")
         item_object = ItemHandler()
-        return item_object.read_data()
+        result_dict = {"status": "success", "data": item_object.read_data()}
     except Exception as err:
         logger.error(BillingServicesException.EX007.format(error=str(err)))
+    return result_dict
 
 
 @item_router.post(APis.create_api)
@@ -58,15 +61,20 @@ def delete_item(item_id: int):
 def send_item(email: Email):
     """Function to send items"""
     try:
+        item_object = ItemHandler()
+        all_billing_list_json = item_object.read_data()
+        table = json2html.convert(json=all_billing_list_json)
         logger.info("Services: send_item")
         item_handler = ItemHandler()
         result = item_handler.pipeline_aggregation()
-        message = f"total amount is {result}"
-        send_email(message, email)
+        message1 = f"Please find the table as shown below: {table}"
+        message2 = f"{message1} \n total amount is {result}"
+        send_email(message2, email)
         logger.info("send_item: Email sent successfully")
         return {"message": "email sent"}
     except Exception as err:
         logger.error(BillingServicesException.EX011.format(error=str(err)))
+        return {"Error": err.args}
 
 
 @item_router.get(APis.get_api)

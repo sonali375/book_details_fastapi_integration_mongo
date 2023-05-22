@@ -1,5 +1,6 @@
 """importing logging"""
 import logging
+from datetime import datetime
 
 
 def get_logger():
@@ -10,7 +11,8 @@ def get_logger():
     formatter = logging.Formatter(
         '%(asctime)s - %(levelname)s - %(filename)s:%(lineno)d - %(funcName)s - %(message)s')
 
-    file_handler = logging.FileHandler('logs/app.log')
+    file_handler = logging.FileHandler(
+        f'logs/book_details_fastapi_integration_mongo_{str(datetime.now().strftime("%d%m%Y"))}.log')
     file_handler.setLevel(logging.INFO)
     file_handler.setFormatter(formatter)
     __logger__.addHandler(file_handler)

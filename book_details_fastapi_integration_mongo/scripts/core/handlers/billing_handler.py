@@ -5,10 +5,11 @@ from scripts.utility.mongo_utility import MongoCollectionBaseClass, MongoConnect
 from scripts.exceptions.exception_codes import *
 from scripts.logging.logger import logger
 
-"""class to handle the items in mongo"""
-
 
 class ItemHandler:
+    """
+    class to handle the items in mongo
+    """
 
     def __init__(self):
         self.user_mongo_obj = MongoCollectionBaseClass(database=DBConstants.DB_NAME,
@@ -23,10 +24,10 @@ class ItemHandler:
             # res= 'success'
             if res:
                 logger.info("read_data: Records Read Successfully")
-                return {"success"}
+                return list(res)
         except Exception as err:
             logger.error(BillingHandlerException.EX001.format(error=str(err)))
-            return {"failed"}
+            return {"status": "failed"}
             # return read_item()
 
     def create_data(self, item: Item):
@@ -37,10 +38,10 @@ class ItemHandler:
             # res= 'success'
             if res:
                 logger.info("create_data: Record Created Successfully")
-                return {"success"}
+                return {"status": "success"}
         except Exception as err:
             logger.error(BillingHandlerException.EX002.format(error=str(err)))
-            return {"failed"}
+            return {"status": "failed"}
             # return create_item(item)
 
     def update_data(self, item_id: int, item: Item):
@@ -51,10 +52,10 @@ class ItemHandler:
             # res= 'success'
             if res:
                 logger.info("update_data: Record Updated Successfully")
-                return {"success"}
+                return {"status": "success"}
         except Exception as err:
             logger.error(BillingHandlerException.EX003.format(error=str(err)))
-            return {"failed"}
+            return {"status": "failed"}
             # return update_item(item_id, item)
 
     def delete_data(self, item_id: int):
@@ -65,10 +66,10 @@ class ItemHandler:
             # res= 'success'
             if res:
                 logger.info("delete_data: Record Deleted Successfully")
-                return {"success"}
+                return {"status": "success"}
         except Exception as err:
             logger.error(BillingHandlerException.EX004.format(error=str(err)))
-            return {"failed"}
+            return {"status": "failed"}
         # return delete_item(item_id)
 
     def pipeline_aggregation(self):

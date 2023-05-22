@@ -17,9 +17,9 @@ def send_email(body, email: Email):
     message = MIMEMultipart()
     message["From"] = sender_email
     message["To"] = receiver_email
-    message["Subject"] = "total price of inventory"
+    message["Subject"] = "Total price of all the items"
 
-    message.attach(MIMEText(str(body), "plain"))
+    message.attach(MIMEText(body, "html"))
 
     try:
         logger.info("Handlers: send_email")

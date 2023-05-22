@@ -1,0 +1,112 @@
+2023-05-22 15:52:26,915 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 15:56:03,338 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 15:56:08,424 - INFO - billing_services.py:17 - view_all_items - Services: view_all_items
+2023-05-22 15:56:08,437 - INFO - billing_handler.py:23 - read_data - Handler: read_data
+2023-05-22 15:56:08,438 - INFO - billing_handler.py:27 - read_data - read_data: Records Read Successfully
+2023-05-22 16:02:37,331 - INFO - billing_services.py:30 - create_item - Services: create_item
+2023-05-22 16:02:37,340 - INFO - billing_handler.py:37 - create_data - Handler: create_data
+2023-05-22 16:02:37,413 - INFO - billing_handler.py:41 - create_data - create_data: Record Created Successfully
+2023-05-22 16:04:51,818 - INFO - billing_services.py:41 - update_item - Services: update_item
+2023-05-22 16:04:51,820 - INFO - billing_handler.py:51 - update_data - Handler: update_data
+2023-05-22 16:04:53,051 - INFO - billing_handler.py:55 - update_data - update_data: Record Updated Successfully
+2023-05-22 16:06:39,557 - INFO - billing_services.py:78 - get_billing - Services: get_billing
+2023-05-22 16:06:39,559 - INFO - billing_handler.py:79 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 16:06:39,560 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-22 17:18:14,043 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 17:18:30,369 - INFO - billing_services.py:18 - view_all_items - Services: view_all_items
+2023-05-22 17:18:30,377 - INFO - billing_handler.py:23 - read_data - Handler: read_data
+2023-05-22 17:18:30,378 - INFO - billing_handler.py:27 - read_data - read_data: Records Read Successfully
+2023-05-22 17:21:43,980 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 17:21:52,335 - INFO - billing_services.py:18 - view_all_items - Services: view_all_items
+2023-05-22 17:21:52,340 - INFO - billing_handler.py:23 - read_data - Handler: read_data
+2023-05-22 17:21:52,340 - INFO - billing_handler.py:27 - read_data - read_data: Records Read Successfully
+2023-05-22 17:35:59,440 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 18:06:03,984 - INFO - billing_services.py:18 - view_all_items - Services: view_all_items
+2023-05-22 18:06:03,990 - INFO - billing_handler.py:23 - read_data - Handler: read_data
+2023-05-22 18:06:03,991 - INFO - billing_handler.py:27 - read_data - read_data: Records Read Successfully
+2023-05-22 18:07:25,593 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 18:07:30,790 - INFO - billing_services.py:18 - view_all_items - Services: view_all_items
+2023-05-22 18:07:30,800 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:07:30,801 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:10:52,575 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 18:11:20,108 - INFO - billing_services.py:18 - view_all_items - Services: view_all_items
+2023-05-22 18:11:20,114 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:11:20,114 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:13:46,758 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 18:13:53,630 - INFO - billing_services.py:18 - view_all_items - Services: view_all_items
+2023-05-22 18:13:53,634 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:13:53,635 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:13:53,710 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:13:53,710 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:15:27,033 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 18:15:32,795 - INFO - billing_services.py:18 - view_all_items - Services: view_all_items
+2023-05-22 18:15:32,805 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:15:32,806 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:15:32,844 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:15:32,845 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:17:22,922 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 18:17:34,371 - INFO - billing_services.py:18 - view_all_items - Services: view_all_items
+2023-05-22 18:17:34,375 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:17:34,376 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:17:34,439 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:17:34,439 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:32:28,019 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 18:33:01,698 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:33:01,699 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:33:02,332 - INFO - billing_services.py:67 - send_item - Services: send_item
+2023-05-22 18:33:02,335 - INFO - billing_handler.py:78 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 18:33:02,336 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-22 18:33:02,416 - ERROR - billing_services.py:76 - send_item - Exception in send_item: Message.attach() takes 2 positional arguments but 3 were given
+2023-05-22 18:34:17,429 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 18:34:48,019 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:34:48,019 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:34:48,184 - INFO - billing_services.py:67 - send_item - Services: send_item
+2023-05-22 18:34:48,187 - INFO - billing_handler.py:78 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 18:34:48,188 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-22 18:34:48,199 - ERROR - billing_services.py:76 - send_item - Exception in send_item: Message.attach() takes 2 positional arguments but 3 were given
+2023-05-22 18:35:10,920 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 18:35:47,810 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:35:47,811 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:35:47,980 - INFO - billing_services.py:67 - send_item - Services: send_item
+2023-05-22 18:35:47,983 - INFO - billing_handler.py:78 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 18:35:47,984 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-22 18:35:48,067 - ERROR - billing_services.py:77 - send_item - Exception in send_item: Message.attach() takes 2 positional arguments but 3 were given
+2023-05-22 18:40:44,570 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:40:44,571 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:40:45,352 - INFO - billing_services.py:67 - send_item - Services: send_item
+2023-05-22 18:40:45,354 - INFO - billing_handler.py:78 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 18:40:45,355 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-22 18:40:45,371 - ERROR - billing_services.py:77 - send_item - Exception in send_item: Message.attach() takes 2 positional arguments but 3 were given
+2023-05-22 18:44:57,323 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:44:57,325 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:44:57,452 - INFO - billing_services.py:67 - send_item - Services: send_item
+2023-05-22 18:44:57,454 - INFO - billing_handler.py:78 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 18:44:57,454 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-22 18:44:57,537 - INFO - email_handler.py:25 - send_email - Handlers: send_email
+2023-05-22 18:45:01,158 - INFO - email_handler.py:33 - send_email - send_email: Message sent successfully
+2023-05-22 18:45:01,159 - INFO - billing_services.py:74 - send_item - send_item: Email sent successfully
+2023-05-22 18:46:12,843 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:46:12,844 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:46:13,968 - INFO - billing_services.py:67 - send_item - Services: send_item
+2023-05-22 18:46:13,972 - INFO - billing_handler.py:78 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 18:46:13,973 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-22 18:46:14,148 - INFO - email_handler.py:25 - send_email - Handlers: send_email
+2023-05-22 18:46:17,692 - INFO - email_handler.py:33 - send_email - send_email: Message sent successfully
+2023-05-22 18:46:17,693 - INFO - billing_services.py:74 - send_item - send_item: Email sent successfully
+2023-05-22 18:53:29,129 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-22 18:53:55,839 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:53:55,839 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:53:56,007 - INFO - billing_services.py:67 - send_item - Services: send_item
+2023-05-22 18:53:56,009 - INFO - billing_handler.py:78 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 18:53:56,010 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-22 18:53:56,020 - INFO - email_handler.py:25 - send_email - Handlers: send_email
+2023-05-22 18:53:59,211 - INFO - email_handler.py:33 - send_email - send_email: Message sent successfully
+2023-05-22 18:53:59,211 - INFO - billing_services.py:74 - send_item - send_item: Email sent successfully
+2023-05-22 18:55:54,107 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 18:55:54,109 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
+2023-05-22 18:55:54,260 - INFO - billing_services.py:67 - send_item - Services: send_item
+2023-05-22 18:55:54,264 - INFO - billing_handler.py:78 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 18:55:54,264 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-22 18:55:54,394 - INFO - email_handler.py:25 - send_email - Handlers: send_email
+2023-05-22 18:55:58,706 - INFO - email_handler.py:33 - send_email - send_email: Message sent successfully
+2023-05-22 18:55:58,707 - INFO - billing_services.py:73 - send_item - send_item: Email sent successfully

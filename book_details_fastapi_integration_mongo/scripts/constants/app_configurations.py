@@ -10,4 +10,4 @@ SERVICE_PORT = config_obj.get("SERVICE", "PORT")
 
 
 # MONGO DETAILS
-# MONGO_DB_URI = config_obj.get("MONGO_DB", "URI")
+MONGO_DB_URI = config_obj.get("MONGO_DB", "URI") + "%" + config_obj.get("MONGO_DB", "URI_1")

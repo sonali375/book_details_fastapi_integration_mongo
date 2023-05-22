@@ -3,8 +3,6 @@ from typing import Dict, Optional
 from pymongo import MongoClient
 from pymongo.cursor import Cursor
 
-"""class to connect the Mongo"""
-
 
 class MongoConnect:
     def __init__(self, uri):
@@ -90,20 +88,6 @@ class MongoCollectionBaseClass:
             print(f"Error in fetching {str(e)}")
             raise e
 
-    def find_one(self, query: Dict, filter_dict: Optional[Dict] = None):
-        try:
-            database_name = self.database
-            collection_name = self.collection
-            if filter_dict is None:
-                filter_dict = {"_id": 0}
-            db = self.client[database_name]
-            collection = db[collection_name]
-            response = collection.find_one(query, filter_dict)
-            return response
-        except Exception as e:
-            print(f"Failed to fetch {str(e)}")
-            raise e
-
     def update_one(
             self,
             query: Dict,
@@ -128,41 +112,6 @@ class MongoCollectionBaseClass:
             print(f"Failed to update one doc {str(e)}")
             raise e
 
-    def update_many(self, query: Dict, data: Dict, upsert: bool = False):
-        """
-
-        :param upsert:
-        :param query:
-        :param data:
-        :return:
-        """
-        try:
-            database_name = self.database
-            collection_name = self.collection
-            db = self.client[database_name]
-            collection = db[collection_name]
-            response = collection.update_many(query, {"$set": data}, upsert=upsert)
-            return response.modified_count
-        except Exception as e:
-            print(f"Failed to update many {str(e)}")
-            raise e
-
-    def delete_many(self, query: Dict):
-        """
-        :param query:
-        :return:
-        """
-        try:
-            database_name = self.database
-            collection_name = self.collection
-            db = self.client[database_name]
-            collection = db[collection_name]
-            response = collection.delete_many(query)
-            return response.deleted_count
-        except Exception as e:
-            print(f"Failed to delete {str(e)}")
-            raise e
-
     def delete_one(self, query: Dict):
         """
         :param query:
@@ -177,20 +126,4 @@ class MongoCollectionBaseClass:
             return response.deleted_count
         except Exception as e:
             print(f"Failed to delete {str(e)}")
-            raise e
-
-    def count_documents(self, query: Dict):
-        """
-        :param query:
-        :return:
-        """
-        try:
-            database_name = self.database
-            collection_name = self.collection
-            db = self.client[database_name]
-            collection = db[collection_name]
-            response = collection.count_documents(query)
-            return response
-        except Exception as e:
-            print(f"Failed to count documents {str(e)}")
             raise e

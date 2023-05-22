@@ -7,11 +7,13 @@ from dotenv import load_dotenv
 from scripts.core.services.billing_services import item_router    # importing item_router
 from scripts.constants.app_configurations import *
 from scripts.constants.app_constants import *
+from scripts.logging.logger import logger
 
 app = FastAPI()
 
 app.include_router(item_router)
 
 if __name__ == '__main__':
-    load_dotenv()
+    logger.info("Main: main file started")
+    load_dotenv(dotenv_path="configuration/.env")
     uvicorn.run(host=SERVICE_HOST, app=CommonConstants.APP_KEY, port=int(SERVICE_PORT), reload=True)
