@@ -1,8 +1,10 @@
+"""importing MongoClient for connection"""
 from fastapi import FastAPI
-from pydantic import BaseModel
-from pymongo import MongoClient   # import mongo client to connect
+from pymongo import MongoClient
 from scripts.constants.app_constants import DBConstants
 from scripts.core.schema.model import Item
+from scripts.exceptions.exception_codes import MongoQueryException
+from scripts.logging.logger import logger
 
 app = FastAPI()
 
@@ -16,31 +18,56 @@ billing = db[DBConstants.DB_COllECTION]
 
 
 def read_item():
+    """Function to read the items"""
+    logger.info("Mono_Query: read_item")
     data = []
-    for items in billing.find():
-        del items['_id']
-        data.append(items)
+    try:
+        for items in billing.find():
+            del items['_id']
+            data.append(items)
+    except Exception as err:
+        logger.error(MongoQueryException.EX013.format(error=str(err)))
     return {
         "db": data
     }
 
 
 def create_item(item: Item):
-    billing.insert_one(item.dict())
-    db[item.id] = item.name
+    """Function to create the items"""
+    try:
+        logger.info("Mono_Query: create_item")
+        billing.insert_one(item.dict())
+        db[item.id] = item.name
+    except Exception as err:
+        logger.error(MongoQueryException.EX014.format(error=str(err)))
     return {
         "db": db
     }
 
 
 def update_item(item_id: int, item: Item):
-    billing.update_one({"id": item_id}, {"$set": item.dict()})
+    """Function to update the items"""
+    try:
+        logger.info("Mono_Query: update_item")
+        billing.update_one({"id": item_id}, {"$set": item.dict()})
+    except Exception as err:
+        logger.error(MongoQueryException.EX015.format(error=str(err)))
 
 
 def delete_item(item_id: int):
-    billing.delete_one({"id": item_id})
+    """Function to delete the items"""
+    try:
+        logger.info("Mono_Query: delete_item")
+        billing.delete_one({"id": item_id})
+    except Exception as err:
+        logger.error(MongoQueryException.EX016.format(error=str(err)))
     return {"message": "deleted"}
 
 
 def pipeline_aggregation(pipeline: list):
-    return billing.aggregate(pipeline)
+    """Function to aggregate the items"""
+    try:
+        logger.info("Mono_Query: pipeline_aggregation")
+        return billing.aggregate(pipeline)
+    except Exception as err:
+        logger.error(MongoQueryException.EX017.format(error=str(err)))

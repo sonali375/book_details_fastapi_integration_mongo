@@ -10,3 +10,8 @@ class Item(BaseModel):
     quantity: int
     cost: int
 
+
+class Email(BaseModel):
+    rec_email: str
+    subject: str
+    body: str

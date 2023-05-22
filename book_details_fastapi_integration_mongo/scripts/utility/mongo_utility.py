@@ -1,6 +1,9 @@
+"""importing MongoClient"""
 from typing import Dict, Optional
 from pymongo import MongoClient
 from pymongo.cursor import Cursor
+
+"""class to connect the Mongo"""
 
 
 class MongoConnect:

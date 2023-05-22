@@ -1,0 +1,27 @@
+2023-05-22 11:52:34,499 - INFO - billing_services.py:15 - view_all_items - Services: view_all_items
+2023-05-22 11:52:34,506 - INFO - billing_handler.py:17 - read_data - Handler: read_data
+2023-05-22 11:52:34,507 - INFO - billing_handler.py:21 - read_data - read_data: Records Read Successfully
+2023-05-22 11:52:43,746 - INFO - billing_services.py:69 - get_billing - Services: get_billing
+2023-05-22 11:52:43,749 - INFO - billing_handler.py:69 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 11:52:43,750 - INFO - mongo_query.py:64 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-22 11:53:06,730 - INFO - billing_services.py:55 - send_item - Services: send_item
+2023-05-22 11:53:06,733 - INFO - billing_handler.py:69 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 11:53:06,733 - INFO - mongo_query.py:64 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-22 11:53:06,744 - INFO - email_handler.py:23 - send_email - Handlers: send_email
+2023-05-22 11:53:09,757 - INFO - email_handler.py:31 - send_email - send_email: Message sent successfully
+2023-05-22 11:53:09,758 - INFO - billing_services.py:60 - send_item - send_item: Email sent successfully
+2023-05-22 12:20:49,950 - INFO - billing_services.py:17 - view_all_items - Services: view_all_items
+2023-05-22 12:20:49,956 - INFO - billing_handler.py:21 - read_data - Handler: read_data
+2023-05-22 12:20:49,956 - INFO - billing_handler.py:25 - read_data - read_data: Records Read Successfully
+2023-05-22 12:21:09,471 - INFO - billing_services.py:61 - send_item - Services: send_item
+2023-05-22 12:21:09,472 - INFO - billing_handler.py:77 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 12:21:09,473 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-22 12:21:09,557 - INFO - email_handler.py:25 - send_email - Handlers: send_email
+2023-05-22 12:21:12,742 - INFO - email_handler.py:33 - send_email - send_email: Message sent successfully
+2023-05-22 12:21:12,743 - INFO - billing_services.py:66 - send_item - send_item: Email sent successfully
+2023-05-22 12:24:57,499 - INFO - billing_services.py:28 - create_item - Services: create_item
+2023-05-22 12:24:57,500 - INFO - billing_handler.py:35 - create_data - Handler: create_data
+2023-05-22 12:24:57,612 - INFO - billing_handler.py:39 - create_data - create_data: Record Created Successfully
+2023-05-22 12:26:29,972 - INFO - billing_services.py:76 - get_billing - Services: get_billing
+2023-05-22 12:26:29,973 - INFO - billing_handler.py:77 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-22 12:26:29,975 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation

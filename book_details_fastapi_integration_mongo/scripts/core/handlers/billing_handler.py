@@ -1,10 +1,11 @@
-import scripts.constants.app_constants
+"""importing constants"""
 from scripts.constants.app_constants import DBConstants, Aggregation
-from scripts.core.db.mongo.interns_b2_23.sonali_db_billing.mongo_query import read_item, create_item, update_item, \
-    delete_item, Item, pipeline_aggregation
+from scripts.core.db.mongo.interns_b2_23.sonali_db_billing.mongo_query import Item, pipeline_aggregation
 from scripts.utility.mongo_utility import MongoCollectionBaseClass, MongoConnect
 from scripts.exceptions.exception_codes import *
-import logging as log
+from scripts.logging.logger import logger
+
+"""class to handle the items in mongo"""
 
 
 class ItemHandler:
@@ -15,42 +16,68 @@ class ItemHandler:
                                                        collection=DBConstants.DB_COllECTION)
 
     def read_data(self):
-        res = self.user_mongo_obj.find({})
-        # res= 'success'
-        if res:
-            return {"status": "success", "message": "Showing all records"}
-        else:
-            return {"status": "failed", "message": "Error showing records", "error": ""}
-        # return read_item()
+        """Function to read data"""
+        try:
+            logger.info("Handler: read_data")
+            res = self.user_mongo_obj.find({})
+            # res= 'success'
+            if res:
+                logger.info("read_data: Records Read Successfully")
+                return {"success"}
+        except Exception as err:
+            logger.error(BillingHandlerException.EX001.format(error=str(err)))
+            return {"failed"}
+            # return read_item()
 
     def create_data(self, item: Item):
-        res = self.user_mongo_obj.insert_one(data=item.dict())
-        # res= 'success'
-        if res:
-            return {"status": "success", "message": "Record Inserted"}
-        else:
-            return {"status": "failed", "message": "Error inserting", "error": ""}
-        # return create_item(item)
+        """Function to create data"""
+        try:
+            logger.info("Handler: create_data")
+            res = self.user_mongo_obj.insert_one(data=item.dict())
+            # res= 'success'
+            if res:
+                logger.info("create_data: Record Created Successfully")
+                return {"success"}
+        except Exception as err:
+            logger.error(BillingHandlerException.EX002.format(error=str(err)))
+            return {"failed"}
+            # return create_item(item)
 
     def update_data(self, item_id: int, item: Item):
-        res = self.user_mongo_obj.update_one({"id": item_id}, item.dict())
-        # res= 'success'
-        if res:
-            return {"status": "success", "message": "Record Updated"}
-        else:
-            return {"status": "failed", "message": "Error updating", "error": ""}
-        # return update_item(item_id, item)
+        """Function to update data"""
+        try:
+            logger.info("Handler: update_data")
+            res = self.user_mongo_obj.update_one({"id": item_id}, item.dict())
+            # res= 'success'
+            if res:
+                logger.info("update_data: Record Updated Successfully")
+                return {"success"}
+        except Exception as err:
+            logger.error(BillingHandlerException.EX003.format(error=str(err)))
+            return {"failed"}
+            # return update_item(item_id, item)
 
     def delete_data(self, item_id: int):
-        res = self.user_mongo_obj.delete_one({'id': item_id})
-        # res= 'success'
-        if res:
-            return {"status": "success", "message": "Record Deleted"}
-        else:
-            return {"status": "failed", "message": "Error deleting", "error": ""}
+        """Function to delete data"""
+        try:
+            logger.info("Handler: delete_data")
+            res = self.user_mongo_obj.delete_one({'id': item_id})
+            # res= 'success'
+            if res:
+                logger.info("delete_data: Record Deleted Successfully")
+                return {"success"}
+        except Exception as err:
+            logger.error(BillingHandlerException.EX004.format(error=str(err)))
+            return {"failed"}
         # return delete_item(item_id)
 
     def pipeline_aggregation(self):
-        data = pipeline_aggregation(Aggregation.aggr)
-        print(data)
-        return {"total_amount": list(data)[0]['total']}
+        """Function to aggregate data"""
+        try:
+            logger.info("Handler: pipeline_aggregation")
+            data = pipeline_aggregation(Aggregation.aggr)
+            logger.info("pipeline_aggregation:", data)
+        except Exception as err:
+            logger.error(BillingHandlerException.EX005.format(error=str(err)))
+
+        return list(data)[0]['total']
