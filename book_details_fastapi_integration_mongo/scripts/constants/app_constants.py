@@ -43,13 +43,3 @@ class Aggregation:
 
 class CommonConstants:
     APP_KEY = "main:app"
-
-
-class EmailContent:
-    BODY_OF_EMAIL = """
-    
-    Overall product price is {over_all_price}
-    
-    Total Products List:
-    {}
-    """

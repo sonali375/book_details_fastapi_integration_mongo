@@ -1,7 +1,7 @@
 """importing constants"""
 from scripts.constants.app_constants import DBConstants, Aggregation
 from scripts.core.db.mongo.interns_b2_23.sonali_db_billing.mongo_query import Item, pipeline_aggregation
-from scripts.utility.mongo_utility import MongoCollectionBaseClass, MongoConnect
+from scripts.utility.mongo_utility import MongoCollectionBaseClass
 from scripts.exceptions.exception_codes import *
 from scripts.logging.logger import logger
 
@@ -13,8 +13,10 @@ class ItemHandler:
 
     def __init__(self):
         self.user_mongo_obj = MongoCollectionBaseClass(database=DBConstants.DB_NAME,
-                                                       mongo_client=MongoConnect(DBConstants.DB_URI).client,
                                                        collection=DBConstants.DB_COllECTION)
+        # self.user_mongo_obj = MongoCollectionBaseClass(database=DBConstants.DB_NAME,
+        #                                                mongo_client=MongoConnect(DBConstants.DB_URI).client,
+        #                                                collection=DBConstants.DB_COllECTION)
 
     def read_data(self):
         """Function to read data"""
@@ -48,6 +50,9 @@ class ItemHandler:
         """Function to update data"""
         try:
             logger.info("Handler: update_data")
+            # Get max of id and increment it by 1
+
+            # item.dict() you add total_cost = quantity * price
             res = self.user_mongo_obj.update_one({"id": item_id}, item.dict())
             # res= 'success'
             if res:

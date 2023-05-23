@@ -2,24 +2,28 @@
 from typing import Dict, Optional
 from pymongo import MongoClient
 from pymongo.cursor import Cursor
+from scripts.constants.app_constants import *
 
 
-class MongoConnect:
-    def __init__(self, uri):
-        try:
-            self.uri = uri
-            self.client = MongoClient(self.uri, connect=False)
-        except Exception as e:
-            print(f"Exception in connection {(str(e))}")
-            raise e
-
-    def __call__(self, *args, **kwargs):
-        return self.client
+# class MongoConnect:
+#     def __init__(self, uri):
+#         try:
+#             self.uri = uri
+#             self.client = MongoClient(self.uri, connect=False)
+#         except Exception as e:
+#             print(f"Exception in connection {(str(e))}")
+#             raise e
+#
+#     def __call__(self, *args, **kwargs):
+#         return self.client
 
 
 class MongoCollectionBaseClass:
-    def __init__(self, mongo_client, database, collection):
-        self.client = mongo_client
+    def __init__(self, database, collection):
+        # self.user_mongo_obj = MongoCollectionBaseClass(database=DBConstants.DB_NAME,
+        #                                                mongo_client=MongoConnect(DBConstants.DB_URI).client,
+        #                                                collection=DBConstants.DB_COllECTION)
+        self.client = MongoClient(DBConstants.DB_URI, connect=False)
         self.database = database
         self.collection = collection
         # print(self.database, self.collection)
