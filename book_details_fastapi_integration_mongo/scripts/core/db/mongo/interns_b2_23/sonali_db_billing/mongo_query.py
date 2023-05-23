@@ -1,11 +1,11 @@
 """importing MongoClient for connection"""
 from fastapi import FastAPI
 from pymongo import MongoClient
+
 from scripts.constants.app_constants import DBConstants
 from scripts.core.schema.model import Item
 from scripts.exceptions.exception_codes import MongoQueryException
 from scripts.logging.logger import logger
-from scripts.constants.app_configurations import *
 
 app = FastAPI()
 

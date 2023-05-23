@@ -72,8 +72,10 @@ class ItemHandler:
             return {"status": "failed"}
         # return delete_item(item_id)
 
-    def pipeline_aggregation(self):
+    @staticmethod
+    def pipeline_aggregation():
         """Function to aggregate data"""
+        global data
         try:
             logger.info("Handler: pipeline_aggregation")
             data = pipeline_aggregation(Aggregation.aggr)
