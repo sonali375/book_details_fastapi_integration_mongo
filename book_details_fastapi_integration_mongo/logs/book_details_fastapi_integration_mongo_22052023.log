@@ -110,3 +110,6 @@
 2023-05-22 18:55:54,394 - INFO - email_handler.py:25 - send_email - Handlers: send_email
 2023-05-22 18:55:58,706 - INFO - email_handler.py:33 - send_email - send_email: Message sent successfully
 2023-05-22 18:55:58,707 - INFO - billing_services.py:73 - send_item - send_item: Email sent successfully
+2023-05-22 19:03:35,655 - INFO - billing_services.py:19 - view_all_items - Services: view_all_items
+2023-05-22 19:03:35,657 - INFO - billing_handler.py:22 - read_data - Handler: read_data
+2023-05-22 19:03:35,658 - INFO - billing_handler.py:26 - read_data - read_data: Records Read Successfully
