@@ -9,13 +9,12 @@ from scripts.logging.logger import logger
 
 app = FastAPI()
 
-
 # Creating instance of mongo client
 client = MongoClient(DBConstants.DB_URI)
 # Creating database
 db = client[DBConstants.DB_NAME]
 # # Creating document
-billing = db[DBConstants.DB_COllECTION]
+billing = db[DBConstants.DB_COLLECTION]
 
 
 def read_item():
@@ -69,6 +68,7 @@ def pipeline_aggregation(pipeline: list):
     """Function to aggregate the items"""
     try:
         logger.info("Mono_Query: pipeline_aggregation")
+        print(pipeline)
         return billing.aggregate(pipeline)
     except Exception as err:
         logger.error(MongoQueryException.EX017.format(error=str(err)))

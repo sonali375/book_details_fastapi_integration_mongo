@@ -13,7 +13,7 @@ class ItemHandler:
 
     def __init__(self):
         self.user_mongo_obj = MongoCollectionBaseClass(database=DBConstants.DB_NAME,
-                                                       collection=DBConstants.DB_COllECTION)
+                                                       collection=DBConstants.DB_COLLECTION)
         # self.user_mongo_obj = MongoCollectionBaseClass(database=DBConstants.DB_NAME,
         #                                                mongo_client=MongoConnect(DBConstants.DB_URI).client,
         #                                                collection=DBConstants.DB_COllECTION)
@@ -80,12 +80,18 @@ class ItemHandler:
     @staticmethod
     def pipeline_aggregation():
         """Function to aggregate data"""
-        global data
+        global data, aggregated_data
         try:
             logger.info("Handler: pipeline_aggregation")
             data = pipeline_aggregation(Aggregation.aggr)
-            logger.info("pipeline_aggregation:", data)
+            aggregated_data = []  # New list to store aggregated data
+            overall_sum = 'total_amount'
+            column_sum = sum(row[overall_sum] for row in data)
+            aggregated_sum = {'overall_sum': column_sum}
+            aggregated_data.append(aggregated_sum)
+
+            logger.info("pipeline_aggregation:", aggregated_data)
         except Exception as err:
             logger.error(BillingHandlerException.EX005.format(error=str(err)))
 
-        return list(data)[0]['total']
+        return aggregated_data

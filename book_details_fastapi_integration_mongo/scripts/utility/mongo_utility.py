@@ -5,21 +5,8 @@ from pymongo.cursor import Cursor
 from scripts.constants.app_constants import *
 
 
-# class MongoConnect:
-#     def __init__(self, uri):
-#         try:
-#             self.uri = uri
-#             self.client = MongoClient(self.uri, connect=False)
-#         except Exception as e:
-#             print(f"Exception in connection {(str(e))}")
-#             raise e
-#
-#     def __call__(self, *args, **kwargs):
-#         return self.client
-
-
 class MongoCollectionBaseClass:
-    def __init__(self, database, collection):
+    def __init__(self, database=DBConstants.DB_NAME, collection=DBConstants.DB_COLLECTION):
         # self.user_mongo_obj = MongoCollectionBaseClass(database=DBConstants.DB_NAME,
         #                                                mongo_client=MongoConnect(DBConstants.DB_URI).client,
         #                                                collection=DBConstants.DB_COllECTION)

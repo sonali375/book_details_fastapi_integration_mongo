@@ -1,0 +1,150 @@
+2023-05-24 10:14:46,828 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 10:22:27,387 - INFO - billing_services.py:31 - create_item - Services: create_item
+2023-05-24 10:22:27,399 - INFO - billing_handler.py:38 - create_data - Handler: create_data
+2023-05-24 10:22:27,469 - INFO - billing_handler.py:42 - create_data - create_data: Record Created Successfully
+2023-05-24 13:13:53,314 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 13:54:20,166 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 14:00:58,554 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 14:11:05,008 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 16:22:01,168 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 16:42:41,975 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 16:42:42,604 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 16:42:44,870 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 16:48:14,695 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 16:48:15,138 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 16:48:17,177 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 16:49:55,021 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 16:50:58,019 - INFO - billing_services.py:20 - view_all_items - Services: view_all_items
+2023-05-24 16:50:58,020 - ERROR - billing_services.py:24 - view_all_items - Exception in view_all_items: type object 'DBConstants' has no attribute 'DB_COllECTION'
+2023-05-24 16:51:23,466 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 16:51:24,159 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 16:51:26,043 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 16:59:16,571 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 16:59:17,025 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 16:59:18,921 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 16:59:31,061 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 16:59:31,466 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 16:59:33,226 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:33:46,327 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:33:46,717 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:43:03,356 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:43:03,951 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 17:43:06,009 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:43:32,763 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 17:43:32,764 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: MongoCollectionBaseClass.__init__() missing 2 required positional arguments: 'database' and 'collection'
+2023-05-24 17:44:05,256 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:44:06,038 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 17:44:11,759 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:44:20,981 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 17:44:20,982 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: MongoCollectionBaseClass.__init__() missing 2 required positional arguments: 'database' and 'collection'
+2023-05-24 17:52:30,964 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:52:31,677 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 17:52:34,264 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:52:50,704 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 17:52:50,705 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: MongoCollectionBaseClass.__init__() missing 2 required positional arguments: 'database' and 'collection'
+2023-05-24 17:53:40,190 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:53:40,976 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 17:53:47,000 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:53:57,128 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 17:53:57,128 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: MongoCollectionBaseClass.__init__() missing 2 required positional arguments: 'database' and 'collection'
+2023-05-24 17:55:49,477 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:55:50,151 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 17:55:56,217 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:56:17,405 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 17:56:17,405 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: MongoCollectionBaseClass.__init__() missing 2 required positional arguments: 'database' and 'collection'
+2023-05-24 17:57:28,885 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:58:25,461 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 17:58:26,326 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 17:58:31,761 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:01:16,408 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 18:01:16,409 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: MongoCollectionBaseClass.__init__() missing 2 required positional arguments: 'database' and 'collection'
+2023-05-24 18:01:44,701 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 18:01:44,703 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: MongoCollectionBaseClass.__init__() missing 2 required positional arguments: 'database' and 'collection'
+2023-05-24 18:03:16,447 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:03:17,783 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 18:03:29,238 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:03:31,641 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 18:03:31,641 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: MongoCollectionBaseClass.__init__() missing 2 required positional arguments: 'database' and 'collection'
+2023-05-24 18:04:21,864 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 18:04:21,864 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: MongoCollectionBaseClass.__init__() missing 2 required positional arguments: 'database' and 'collection'
+2023-05-24 18:05:21,586 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:05:33,162 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 18:05:33,175 - INFO - excel_handler.py:21 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-24 18:05:33,176 - ERROR - excel_handler.py:39 - excel_from_billing_data - Exception in excel handling: pipeline_aggregation() missing 1 required positional argument: 'pipeline'
+2023-05-24 18:13:21,650 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:13:37,134 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:13:39,766 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 18:13:39,772 - INFO - excel_handler.py:22 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-24 18:13:39,773 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-24 18:14:56,337 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 18:14:56,338 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: MongoCollectionBaseClass.__init__() missing 2 required positional arguments: 'database' and 'collection'
+2023-05-24 18:15:07,837 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 18:15:07,838 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: MongoCollectionBaseClass.__init__() missing 2 required positional arguments: 'database' and 'collection'
+2023-05-24 18:15:29,669 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:15:30,142 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 18:15:32,837 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:16:02,754 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 18:16:02,755 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: MongoCollectionBaseClass.__init__() missing 2 required positional arguments: 'database' and 'collection'
+2023-05-24 18:18:59,317 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:19:14,344 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 18:19:14,350 - INFO - excel_handler.py:22 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-24 18:19:14,350 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-24 18:20:20,207 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:20:20,645 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 18:20:22,722 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:20:35,567 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 18:20:35,570 - INFO - excel_handler.py:22 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-24 18:20:35,571 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-24 18:20:44,460 - INFO - billing_services.py:20 - view_all_items - Services: view_all_items
+2023-05-24 18:20:44,460 - ERROR - billing_services.py:24 - view_all_items - Exception in view_all_items: type object 'DBConstants' has no attribute 'DB_COllECTION'
+2023-05-24 18:22:33,740 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:22:34,181 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 18:22:35,919 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:23:39,097 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:23:39,853 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 18:23:41,651 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:23:56,645 - INFO - billing_services.py:20 - view_all_items - Services: view_all_items
+2023-05-24 18:23:56,646 - ERROR - billing_services.py:24 - view_all_items - Exception in view_all_items: type object 'DBConstants' has no attribute 'DB_COllECTION'
+2023-05-24 18:27:33,483 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:27:34,093 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-24 18:27:37,088 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:27:48,587 - INFO - billing_services.py:20 - view_all_items - Services: view_all_items
+2023-05-24 18:27:48,588 - ERROR - billing_services.py:24 - view_all_items - Exception in view_all_items: type object 'DBConstants' has no attribute 'DB_COllECTION'
+2023-05-24 18:30:32,751 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:30:40,555 - INFO - billing_services.py:20 - view_all_items - Services: view_all_items
+2023-05-24 18:30:40,564 - INFO - billing_handler.py:24 - read_data - Handler: read_data
+2023-05-24 18:30:40,565 - INFO - billing_handler.py:28 - read_data - read_data: Records Read Successfully
+2023-05-24 18:31:21,568 - INFO - billing_services.py:32 - create_item - Services: create_item
+2023-05-24 18:31:21,571 - INFO - billing_handler.py:38 - create_data - Handler: create_data
+2023-05-24 18:31:21,780 - INFO - billing_handler.py:42 - create_data - create_data: Record Created Successfully
+2023-05-24 18:32:08,484 - INFO - billing_services.py:43 - update_item - Services: update_item
+2023-05-24 18:32:08,488 - INFO - billing_handler.py:52 - update_data - Handler: update_data
+2023-05-24 18:32:08,611 - INFO - billing_handler.py:59 - update_data - update_data: Record Updated Successfully
+2023-05-24 18:32:29,705 - INFO - billing_services.py:54 - delete_item - Services: delete_item
+2023-05-24 18:32:29,707 - INFO - billing_handler.py:69 - delete_data - Handler: delete_data
+2023-05-24 18:32:29,839 - INFO - billing_handler.py:73 - delete_data - delete_data: Record Deleted Successfully
+2023-05-24 18:32:57,390 - INFO - billing_handler.py:24 - read_data - Handler: read_data
+2023-05-24 18:32:57,391 - INFO - billing_handler.py:28 - read_data - read_data: Records Read Successfully
+2023-05-24 18:32:57,681 - INFO - billing_services.py:68 - send_item - Services: send_item
+2023-05-24 18:32:57,685 - INFO - billing_handler.py:85 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-24 18:32:57,685 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-24 18:32:57,790 - INFO - email_handler.py:25 - send_email - Handlers: send_email
+2023-05-24 18:33:02,247 - INFO - email_handler.py:33 - send_email - send_email: Message sent successfully
+2023-05-24 18:33:02,250 - INFO - billing_services.py:74 - send_item - send_item: Email sent successfully
+2023-05-24 18:33:25,082 - INFO - billing_services.py:85 - get_billing - Services: get_billing
+2023-05-24 18:33:25,083 - INFO - billing_handler.py:85 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-24 18:33:25,084 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-24 18:33:51,235 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 18:33:51,239 - INFO - excel_handler.py:22 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-24 18:33:51,241 - INFO - mongo_query.py:71 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-24 18:36:23,269 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:36:41,897 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 18:37:00,409 - INFO - billing_services.py:85 - get_billing - Services: get_billing
+2023-05-24 18:37:00,420 - INFO - billing_handler.py:85 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-24 18:37:00,420 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-24 19:04:53,931 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 19:05:26,406 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 19:08:31,717 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-24 19:08:36,822 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-24 19:08:36,827 - INFO - excel_handler.py:22 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-24 19:08:36,828 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation

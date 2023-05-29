@@ -1,26 +1,42 @@
 import pandas as pd
+from scripts.utility.mongo_utility import MongoCollectionBaseClass
+from scripts.logging.logger import logger
+from fastapi import FastAPI
+from fastapi.responses import FileResponse
+from scripts.core.handlers.billing_handler import pipeline_aggregation
+from scripts.exceptions.exception_codes import ExcelHandlerException
+from scripts.constants.app_constants import Aggregation
 
-# Generate bill data
-bill_data = [
-    {'id': 44, 'name': "oil", 'quantity': 10, 'cost': 200},
-    {'id': 3, 'name': "shampoo", 'quantity': 3, 'cost': 20}
-]
+app = FastAPI()
 
-# Create a DataFrame from the bill data
-df = pd.DataFrame(bill_data)
 
-# Calculate total price
-df['total_amount'] = df['quantity'] * df['cost']
+class ExcelGeneration:
+    """class for generating excel"""
 
-# Calculate grand total
-grand_total = df['total_amount'].sum()
+    def __init__(self):
+        self.mongo_obj = MongoCollectionBaseClass()
 
-# Save the bill as an Excel file
-excel_file = 'bill.xlsx'
-df.to_excel(excel_file, index=False)
+    def excel_from_billing_data(self):
+        """function to generate Excel sheet from billing data"""
+        try:
+            logger.info("Handler:excel_from_billing_data")
+            # Fetching the data for the Excel file
+            excel_data = pipeline_aggregation(Aggregation.aggr)
+            # overall_total = sum(row['total_amount'] for row in excel_data)
+            # overall_total_row = {'overall_total': overall_total}
+            # excel_data.append(overall_total_row)
+            print(excel_data)
 
-# Upload the bill in bulk by inserting all records
-# Insert your code here to upload the Excel file
+            # Create a DataFrame from the data
+            df = pd.DataFrame(excel_data)
 
-# Print the grand total
-print('Grand Total:', grand_total)
+            # Create the Excel file
+            excel_file = 'report/billing_excel_record.xlsx'
+            df.to_excel(excel_file, index=False)
+
+            # Return the Excel file as a FileResponse
+            return FileResponse(excel_file,
+                                media_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                                filename='report/billing_excel_record.xlsx')
+        except Exception as err:
+            logger.error(ExcelHandlerException.EX018.format(error=str(err)))

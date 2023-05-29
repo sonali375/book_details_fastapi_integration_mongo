@@ -3,6 +3,7 @@ from fastapi import APIRouter
 from scripts.core.db.mongo.interns_b2_23.sonali_db_billing.mongo_query import Item
 from scripts.core.handlers.billing_handler import ItemHandler
 from scripts.core.handlers.email_handler import send_email, Email
+from scripts.core.handlers.excel_handler import *
 from scripts.constants.app_constants import APis
 from scripts.exceptions.exception_codes import BillingServicesException
 from scripts.logging.logger import logger
@@ -68,7 +69,7 @@ def send_item(email: Email):
         item_handler = ItemHandler()
         result = item_handler.pipeline_aggregation()
         message1 = f"Please find the table as shown below: {table}"
-        message2 = f"{message1} \n total amount is {result}"
+        message2 = f"{message1} \n {result}"
         send_email(message2, email)
         logger.info("send_item: Email sent successfully")
         return {"message": "email sent"}
@@ -87,3 +88,14 @@ def get_billing():
         return result
     except Exception as err:
         logger.error(BillingServicesException.EX012.format(error=str(err)))
+
+
+@item_router.get(APis.get_excel)
+def get_excel_report():
+    """Function to get the Excel report"""
+    try:
+        logger.info("Services: get_excel_report")
+        item_object = ExcelGeneration()
+        return item_object.excel_from_billing_data()
+    except Exception as err:
+        logger.error(BillingServicesException.EX019.format(error=str(err)))

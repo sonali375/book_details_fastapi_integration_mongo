@@ -10,10 +10,9 @@ from scripts.constants.app_constants import *
 from scripts.logging.logger import logger
 
 app = FastAPI()
-
+load_dotenv(dotenv_path="configuration/.env")
 app.include_router(item_router)
 
 if __name__ == '__main__':
     logger.info("Main: main file started")
-    load_dotenv(dotenv_path="configuration/.env")
     uvicorn.run(host=SERVICE_HOST, app=CommonConstants.APP_KEY, port=int(SERVICE_PORT), reload=True)
