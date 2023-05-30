@@ -1,0 +1,69 @@
+2023-05-30 11:29:57,977 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 11:29:58,646 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-30 11:30:01,278 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 11:30:16,118 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 11:30:16,126 - INFO - excel_handler.py:22 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-30 11:30:16,127 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-30 11:36:40,290 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 11:37:03,809 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 11:37:08,535 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 11:37:08,551 - INFO - excel_handler.py:22 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-30 11:37:08,552 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-30 11:38:26,283 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 11:38:35,338 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 11:38:35,344 - INFO - excel_handler.py:22 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-30 11:38:35,347 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-30 11:38:55,866 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 11:38:55,868 - INFO - excel_handler.py:22 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-30 11:38:55,870 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-30 12:38:11,812 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 12:38:14,530 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 12:38:14,541 - INFO - excel_handler.py:22 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-30 12:38:14,542 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-30 12:48:13,792 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 12:58:42,195 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 12:59:33,205 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 13:00:44,725 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 13:01:38,733 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 13:02:20,338 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 13:02:39,528 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 13:02:46,176 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 13:02:46,182 - INFO - excel_handler.py:25 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-30 13:02:46,183 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-30 13:05:49,292 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 13:05:51,093 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 13:05:51,103 - INFO - excel_handler.py:25 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-30 13:05:51,103 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-30 14:22:22,305 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 14:23:15,135 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 14:23:48,575 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 14:23:49,534 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 14:23:49,538 - INFO - excel_handler.py:25 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-30 14:23:49,538 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-30 14:29:18,395 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 14:29:19,575 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 14:29:19,579 - INFO - excel_handler.py:25 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-30 14:29:19,580 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-30 14:31:37,509 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 16:38:31,182 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 17:45:18,180 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 17:45:18,274 - INFO - excel_handler.py:25 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-30 17:45:18,278 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-30 18:17:06,789 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 18:17:08,454 - INFO - main.py:17 - <module> - Main: main file started
+2023-05-30 18:17:10,442 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 18:17:25,242 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 18:17:25,255 - INFO - excel_handler.py:25 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-30 18:17:25,256 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-30 18:23:02,036 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 18:33:03,473 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 18:35:22,446 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 18:38:50,062 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 18:38:56,844 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 18:38:56,848 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: ExcelGeneration.excel_from_billing_data() missing 1 required positional argument: 'self'
+2023-05-30 18:41:37,173 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 18:45:59,675 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-30 19:14:24,525 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 19:14:24,538 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: ExcelGeneration.excel_from_billing_data() missing 1 required positional argument: 'self'
+2023-05-30 19:14:46,115 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-30 19:14:46,117 - ERROR - billing_services.py:101 - get_excel_report - Exception in get_excel_report: ExcelGeneration.excel_from_billing_data() missing 1 required positional argument: 'self'

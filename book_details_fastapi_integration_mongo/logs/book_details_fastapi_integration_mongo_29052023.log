@@ -115,3 +115,14 @@
 2023-05-29 13:08:41,313 - INFO - excel_handler.py:22 - excel_from_billing_data - Handler:excel_from_billing_data
 2023-05-29 13:08:41,313 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
 2023-05-29 13:08:53,803 - INFO - utils.py:160 - _init_num_threads - NumExpr defaulting to 4 threads.
+2023-05-29 17:59:49,799 - INFO - billing_handler.py:24 - read_data - Handler: read_data
+2023-05-29 17:59:49,812 - INFO - billing_handler.py:28 - read_data - read_data: Records Read Successfully
+2023-05-29 17:59:50,011 - INFO - billing_services.py:68 - send_item - Services: send_item
+2023-05-29 17:59:50,017 - INFO - billing_handler.py:85 - pipeline_aggregation - Handler: pipeline_aggregation
+2023-05-29 17:59:50,018 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
+2023-05-29 17:59:50,107 - INFO - email_handler.py:25 - send_email - Handlers: send_email
+2023-05-29 17:59:54,247 - INFO - email_handler.py:33 - send_email - send_email: Message sent successfully
+2023-05-29 17:59:54,251 - INFO - billing_services.py:74 - send_item - send_item: Email sent successfully
+2023-05-29 18:15:50,834 - INFO - billing_services.py:97 - get_excel_report - Services: get_excel_report
+2023-05-29 18:15:50,840 - INFO - excel_handler.py:22 - excel_from_billing_data - Handler:excel_from_billing_data
+2023-05-29 18:15:50,842 - INFO - mongo_query.py:70 - pipeline_aggregation - Mono_Query: pipeline_aggregation
